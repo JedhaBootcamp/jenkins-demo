@@ -1,6 +1,6 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'python:3.12.5-alpine3.20' } }
+    agent { docker { image 'python:windowsservercore-ltsc2022' } }
     stages {
         stage('build') {
             steps {
