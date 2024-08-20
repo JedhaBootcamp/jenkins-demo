@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'pip install -r requirements.txt'
+                bat 'pip3 install -r requirements.txt'
             }
         }
 
         stage('Run ETL Script') {
             steps {
-                bat 'python etl_script.py'
+                bat 'py etl_script.py'
             }
         }
     }
