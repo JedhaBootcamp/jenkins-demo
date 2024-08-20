@@ -1,10 +1,10 @@
 /* Requires the Docker Pipeline plugin */
 pipeline {
-    agent { docker { image 'python:windowsservercore-ltsc2022' } }
+    agent any
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                echo "Hello world !"
             }
         }
     }
