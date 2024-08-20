@@ -2,10 +2,17 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                echo "Hello world !"
+                sh 'pip install -r requirements.txt'
             }
+        }
+
+        stage('Run ETL Script') {
+            steps {
+                bat 'python etl_script.py'
+            }
+        }
         }
     }
 }
