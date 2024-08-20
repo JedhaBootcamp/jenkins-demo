@@ -13,6 +13,5 @@ pipeline {
                 bat 'python etl_script.py'
             }
         }
-        }
     }
 }
