@@ -13,5 +13,10 @@ pipeline {
                 bat 'python etl_script.py'
             }
         }
+	stage('Display output') {
+            steps {
+                bat 'cat output_data.csv'
+            }
+        }
     }
 }
