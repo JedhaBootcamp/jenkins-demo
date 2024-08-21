@@ -15,7 +15,7 @@ pipeline {
         }
 	stage('Display output') {
             steps {
-                bat 'cat output_data.csv'
+                cat output_data.csv
             }
         }
     }
