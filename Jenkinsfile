@@ -10,7 +10,7 @@ pipeline {
 
         stage('Run ETL Script') {
             steps {
-                bat 'py etl_script.py'
+                bat 'python etl_script.py'
             }
         }
     }
